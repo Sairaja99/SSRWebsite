@@ -253,12 +253,12 @@ function saveModePreference() {
 // Load Mode Preference
 function loadModePreference() {
     const modePreference = localStorage.getItem('modePreference');
-    if (modePreference === 'dark') {
-        document.body.classList.add('dark-mode');
-        document.body.classList.remove('light-mode');
-    } else {
+    if (modePreference === 'light') {
         document.body.classList.add('light-mode');
         document.body.classList.remove('dark-mode');
+    } else {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
     }
 }
 
