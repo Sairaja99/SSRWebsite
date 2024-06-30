@@ -1,4 +1,3 @@
-// Cart Open Close
 let cartIcon = document.querySelector('#cart-icon');
 let cart = document.querySelector('.cart');
 let closeCart = document.querySelector('#close-cart');
@@ -248,19 +247,3 @@ function redirectToPayment() {
 document.getElementById('back-to-page').addEventListener('click', function() {
     window.history.back(); // Go back to the previous page in history
   });
-
-/*Service Form*/
-
-// Select the form and submit button
-const form = document.querySelector('.complaint-form');
-const submitBtn = form.querySelector('.sc-btn');
-
-// Add event listener to the form for submit event
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    // Display popup message
-    alert('Your form is submitted. Our Technicians will contact you within 24 hrs. Thank you'); // Replace with your desired popup message
-    // Optionally, you can reset the form after submission
-    form.reset();
-});
