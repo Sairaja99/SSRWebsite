@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 
 // Cart Open Close
@@ -217,6 +218,8 @@ function updateCartIcon(){
 
 
 // Cart Open Close
+=======
+>>>>>>> a72bcb9b02276b383f1db44549c8e7f17df57b9c
 let cartIcon = document.querySelector('#cart-icon');
 let cart = document.querySelector('.cart');
 let closeCart = document.querySelector('#close-cart');
