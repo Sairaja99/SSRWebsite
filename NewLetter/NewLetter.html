@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Email Cover</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fde8e8; /* Light pink background */
+            color: #555; /* Dark grey text color */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Full viewport height */
+        }
+        
+        .container {
+            width: 90%; /* Adjust width as needed */
+            padding: 20px;
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255,192,203,0.5); /* Soft pink shadow */
+        }
+        
+        h1 {
+            color: #ff69b4; /* Hot pink for header */
+            text-align: center;
+        }
+        
+        .content {
+            display: none; /* Initially hidden */
+            padding-top: 10px;
+        }
+        
+        .expand-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #ff69b4; /* Hot pink button background */
+            color: #fff; /* White text color */
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Remove default link underline */
+            width: 100px; /* Adjust button width */
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888; /* Light grey for footer text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Email Cover Letter</h1>
+
+        <p>Dirtiest koala </p>
+
+        <div class="content">
+            <p></p>
+
+                I know you blocked me, so I'm asking you to unblock me if you want. Although your face is not great, I am the only guy with you, as you know. Even though you have a lot of boyfriends, I only had one friend. Although you don't want me, I want my friend. If you want to continue as things are now, it's your wish. If you want things to be like before, you can unblock me and call me.
+                
+                <strong> Previously, if you had any problem with me, you would directly ask me, get angry at me, and ask for an apology. But now it's changed. </strong>Since you've changed so much, you blame me. It's okay, but you should tell me what's wrong with me if you want me.
+                
+                Until yesterday, I waited for your call or message, but you didn't reach out. You proved me wrong, as you do every time. Bane chadevave chivare varuku. sarle cal chey muskone. If you have any query you can ask me.........
+                
+            </p>
+
+            <b>Friends are those whom you can't buy with money. They don't judge your appearance, as like me. They accept your ego, and they tolerate your anger.</b>
+            <div class="footer">
+                <p>YOU KNOW</p>
+                <p>If you unblock  cal me </p>
+            </div>
+        </div>
+
+        <a href="#" class="expand-btn" onclick="toggleContent()">Open</a>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var content = document.querySelector('.content');
+            var btn = document.querySelector('.expand-btn');
+
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Close';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Open';
+            }
+        }
+    </script>
+</body>
+</html>
